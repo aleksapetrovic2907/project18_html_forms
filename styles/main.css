@@ -2,7 +2,7 @@
     --grey: #eceef1;
     --dark-grey: #989898;
     --border-grey: #c1c5c8;
-    --btn-blue: #0177c5;
+    --btn-blue: #0077c5;
     --link-blue: #1883c9;
     --black: #4c4c4c;
 }
@@ -138,6 +138,9 @@ a {
     border: 1px solid var(--border-grey);
     border-radius: 4px;
     padding: 12px;
+}
+.btn:hover {
+    background: linear-gradient(0deg, rgba(1,119,197,1) 49%, rgba(106,143,232,1) 100%);
 }
 .btn-with-lock {
     display: flex;
