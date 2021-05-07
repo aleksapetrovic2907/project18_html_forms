@@ -5,48 +5,113 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Project 18 - HTML Forms</title>
+    <title>Intuit Accounts - Sign Up</title>
 
     <link rel="stylesheet" href="styles/reset.css">
     <link rel="stylesheet" href="styles/main.css">
 </head>
 
 <body>
-    <div class="form">
-        <div class="signup">
-            <h1 class="">Create an Intuit Account</h1>
-            <span class="text-muted">One account for everything Intuit, including Mint.</span>
-            <a href="#">Learn More</a>
-            <form>
-                <label for="email">
-                    Email address
-                </label>
-                <input type="email" id="email" name="email">
-
-                <label for="tel">
-                    Phone <span class="text-muted">(recommended)</span>
-                </label>
-                <input type="tel" id="tel" name="tel">
-
-                <label for="password">
-                    Password
-                </label>
-                <input type="password" id="password" name="password">
-
-                <input type="submit" value="Create Account" class="btn">
-            </form>
-            <span class="text-muted" style="font-style: italic;">By selecting Create Account, you agree to our <a
-                    href="#">Terms</a> and have read and
-                acknowledge our <a href="#">Global Privacy Statement</a>.</span>
+    <nav>
+        <div>
+            <span class="text-sm text-muted">Already have an Intuit account?</span>
+            <a href="#" class="text-sm">I forgot my User ID or Password</a>
         </div>
-        <div class="recaptcha">
-            <span class="text-muted">Invisible reCAPTCHA by Google <a href="#">Privacy Policy</a> and <a href="#">Terms
-                    of Use</a>.</span>
+        <button class="btn btn-with-lock">
+            <span class="white-lock"></span>
+            <span>Sign In</span>
+        </button>
+    </nav>
+
+
+
+
+    <div class="center-container">
+        <a href="index.html" class="logo"></a>
+        <div class="other-logos-container">
+            <a href="http://www.mint.com">
+                <span class="logos logo-mint"></span>
+                <span class="logos text-mint"></span>
+            </a>
+            <a href="#">
+                <span class="logos logo-quickbooks"></span>
+                <span class="logos text-quickbooks"></span>
+            </a>
+            <a href="#">
+                <span class="logos logo-turbotax"></span>
+                <span class="logos text-turbotax"></span>
+            </a>
+        </div>
+
+        <div class="form">
+            <div class="signup">
+                <div class="signup-info">
+                    <h1 class="text-black">Create an Intuit Account</h1>
+                    <div class="text-muted text-sm">One account for everything Intuit, including Mint.</div>
+                    <a href="#" class="text-sm">Learn more</a>
+                </div>
+                <form>
+                    <div class="form-field">
+                        <label for="email">
+                            Email address
+                        </label>
+                        <input type="email" id="email" name="email">
+                    </div>
+
+                    <div class="form-field">
+                        <label for="tel">
+                            Phone <span class="text-muted">(recommended)</span>
+                        </label>
+                        <input type="tel" id="tel" name="tel">
+                        <span class="text-xsm" style="padding-top: 5px;">Standard call, messaging or data rates may apply.</span>
+                    </div>
+
+                    <div class="form-field">
+                        <label for="password">
+                            Password
+                        </label>
+                        <input type="password" id="password" name="password">
+                        <span class="lock"></span>
+                    </div>
+                    <div class="form-field">
+                        <button type="submit" class="btn btn-with-lock">
+                            <span class="white-lock"></span>
+                            <span class="text-md">Create Account</span>
+                        </button>
+                    </div>
+
+                </form>
+                <div style="text-align: center;">
+                    <span class="text-muted text-sm" style="font-style: italic;">By selecting Create
+                        Account, you agree to our <a href="#">Terms</a> and have read and
+                        acknowledge our <a href="#">Global Privacy Statement</a>.</span>
+                </div>
+            </div>
+            <div class="recaptcha text-muted text-xsm">Invisible reCAPTCHA by Google <a href="#">Privacy Policy</a> and
+                <a href="#">Terms
+                    of Use</a>.
+            </div>
+        </div>
+        <div class="terms text-sm">
+            <div class="external-links" style="margin-bottom: 12px;">
+                <a href="#">Legal</a>
+                <a href="#">Privacy</a>
+                <a href="#">Security</a>
+            </div>
+            <div class="copyright">
+                <span>© 2021 Intuit, Inc. All rights reserved. Intuit, QuickBooks, QB, TurboTax, ProConnect and Mint are
+                    registered trademarks of Intuit Inc.<br>
+                    Terms and conditions, features, support, pricing, and service options subject to change without
+                    notice.</span>
+
+            </div>
         </div>
     </div>
 
+
+
     <footer>
-        <a href="#">Privacy Settings</a>
+        <div><a href="#">Privacy Settings</a></div>
     </footer>
 </body>
 
